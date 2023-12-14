@@ -4,7 +4,8 @@ description: 'Custom action to multiply two numbers'
  
 runs:
   using: 'docker'
-  image: 'python:3.12'
+  image: 'Dockerfile'
+  entrypoint: /entrypoint.sh
  
 inputs:
   num1:
