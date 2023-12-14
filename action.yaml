@@ -1,18 +1,19 @@
-name: Custom Python Action
-on:
-  push:
-    branches:
-      - main
-jobs:
-  run_custom_action:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.12
-      - name: Run Custom Action
-        run: python main.py
-        
+name: 'Python Multiply Numbers'
+
+description: 'Custom action to multiply two numbers'
+ 
+runs:
+  using: 'docker'
+  image: 'python:3.12'
+ 
+inputs:
+  num1:
+    description: 'First number'
+    required: true
+  num2:
+    description: 'Second number'
+    required: true
+ 
+outputs:
+  result:
+    description: 'Sum of the two numbers'
