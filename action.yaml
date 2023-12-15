@@ -21,6 +21,7 @@ runs:
       run: |
         cd ../../
         pwd
+        cd _actions
         ls
         cd RameshGithubActions/CusAct1_Python
         python3 src/main.py
