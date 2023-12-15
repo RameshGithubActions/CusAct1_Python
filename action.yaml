@@ -2,10 +2,6 @@ name: 'Python Multiply Numbers'
 
 description: 'Custom action to multiply two numbers'
  
-runs:
-  using: 'python'
-  main: 'src/main.py'
-   
 inputs:
   num1:
     description: 'First number'
@@ -14,8 +10,8 @@ inputs:
     description: 'Second number'
     required: true
  
-outputs:
-  result:
-    description: 'Sum of the two numbers'
-
-
+runs:
+  using: 'composite'
+  steps:
+    - name: Run Python Code
+      run: python3 src/main.py
