@@ -20,11 +20,5 @@ runs:
       shell: bash
       run: |
         cd ../../
-        pwd
-        cd _actions
-        cd RameshGithubActions
-        cd CusAct1_Python
-        cd v15
-        ls
+        cd _actions/RameshGithubActions/CusAct1_Python/v16
         python3 src/main.py
-
