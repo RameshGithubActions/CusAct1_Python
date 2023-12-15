@@ -3,10 +3,9 @@ name: 'Python Multiply Numbers'
 description: 'Custom action to multiply two numbers'
  
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  entrypoint: /entrypoint.sh
- 
+  using: 'python'
+  main: 'src/main.py'
+   
 inputs:
   num1:
     description: 'First number'
