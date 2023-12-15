@@ -24,6 +24,6 @@ runs:
         cd _actions
         cd RameshGithubActions
         ls
-        cd RameshGithubActions/CusAct1_Python
+        cd CusAct1_Python
         python3 src/main.py
 
