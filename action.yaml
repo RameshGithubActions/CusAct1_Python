@@ -13,13 +13,8 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Check files
-      shell: bash
-      run: |
-        ls
-        pwd
-        cd ..
-        ls
+    - name: Checkout code
+      uses: actions/checkout@v4
     
     - name: Run Python Code
       shell: bash
