@@ -20,6 +20,7 @@ runs:
       shell: bash
       run: |
         cd ../../
+        pwd
         cd RameshGithubActions/CusAct1_Python
         python3 src/main.py
 
