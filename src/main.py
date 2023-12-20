@@ -10,4 +10,4 @@ def multiplication_from_system_arguements():
 
 
 if __name__ == "__main__":
-    print("Result from Python File: " + str(multiplication_from_system_arguements()))   
+    multiplication_from_system_arguements()   
