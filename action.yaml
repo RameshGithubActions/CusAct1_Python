@@ -2,14 +2,6 @@ name: 'Python Multiply Numbers'
 
 description: 'Custom action to multiply two numbers'
  
-inputs:
-  num1:
-    description: 'First number'
-    required: true
-  num2:
-    description: 'Second number'
-    required: true
- 
 runs:
   using: 'composite'
   steps:
@@ -20,5 +12,5 @@ runs:
       shell: bash
       run: |
         cd ../../
-        cd _actions/RameshGithubActions/CusAct1_Python/v24
+        cd _actions/RameshGithubActions/CusAct1_Python/v2
         python3 src/main.py
