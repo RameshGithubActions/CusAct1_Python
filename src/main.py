@@ -1,4 +1,4 @@
-import os
+import sys
 
 result = 1
 n = len(sys.argv)
